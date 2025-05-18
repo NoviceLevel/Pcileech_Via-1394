@@ -41,9 +41,8 @@ module pcileech_bar_impl_1394(
         if (rst)begin
             data_000c <= 32'h3f;
 
-
         end else begin
-            number          <= number + 1;
+
         drd_req_ctx     <= rd_req_ctx;
         drd_req_valid   <= rd_req_valid;
         dwr_valid       <= wr_valid;
