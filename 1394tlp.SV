@@ -93,7 +93,7 @@ module pcileech_bar_impl_1394(
                     if (dwr_data[11:8] == 4'h5) data_00ec <= {4'h8,dwr_data[11:8],12'h000,dwr_data[11:0]};
                     if (dwr_data[11:8] == 4'h1) data_00ec <= {4'h8,dwr_data[11:8],12'h3f0,dwr_data[11:0]};
                 end
-                16'h0014 : data_0014 <= {28'h88000000,dwr_data[3:0]};
+                16'h0014 : data_0014 <= {28'h8800000,dwr_data[3:0]};
             endcase
 			end
 		end
